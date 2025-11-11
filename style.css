@@ -62,4 +62,77 @@ body {
     margin-right: 10px;
 }
 
+.search-input::placeholder {
+    color: #eee;
+}
+
+.search-button {
+    border: none;
+    outline: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+/*блок с инфой о  погоде*/
+
+.weather-info {
+    display: none;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.temp {
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.city {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.column i {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.humidity {
+    font-size: 24px;
+    font-weight: 500;
+}
+/*блок ошибки*/
+
+
+
 
