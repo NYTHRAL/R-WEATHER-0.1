@@ -1,0 +1,65 @@
+/*общие стили*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Audiowide', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4a90e2, #1913fe);
+}
+
+/*карточка погоды*/
+
+.weather-card {
+    width: 90%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, .1); /*эффект матового стекла*/
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /*блюр эффект*/
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    /*Анимации*/
+    transform: scale(0.9);
+    opacity: 0;
+    animation: fadeInCard 0.5s ease-out forwards;
+}
+
+@keyframes fadeInCard {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/*блок поиска*/
+
+․search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
